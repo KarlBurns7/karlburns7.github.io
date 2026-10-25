@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Desk - Karl Burns's personal assistant</title>
+<meta name="description" content="The Desk is Karl Burns's personal, single-user assistant. It reads his Gmail to surface what needs his attention, and drafts or sends email only after he approves each message.">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://karlburns7.github.io/the-desk/">
+<style>
+:root{--bg:#f6f5f2;--card:#fff;--ink:#1d1d1f;--muted:#5a5a60;--line:#e3e1dc;--accent:#1f5fbf}
+@media (prefers-color-scheme:dark){:root{--bg:#141416;--card:#1e1e22;--ink:#f2f2f4;--muted:#a6a6ad;--line:#2e2e34;--accent:#7fb0ff}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,system-ui,"Segoe UI",Roboto,sans-serif;padding:max(28px,env(safe-area-inset-top)) 20px max(36px,env(safe-area-inset-bottom))}
+.wrap{max-width:640px;margin:0 auto}
+h1{font-size:2rem;line-height:1.15;margin:0 0 6px;letter-spacing:-.01em}
+.tagline{color:var(--muted);margin:0 0 26px}
+h2{font-size:1.1rem;margin:28px 0 8px}
+p,li{margin:0 0 10px}
+ul{padding-left:1.2em;margin:0 0 12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:0 0 16px}
+a{color:var(--accent);text-underline-offset:3px}
+footer{margin-top:36px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>The Desk</h1>
+  <p class="tagline">Karl Burns's personal assistant. One user, his own Mac.</p>
+
+  <div class="card">
+    <p>The Desk is a private, single-user assistant that Karl Burns built for himself. It isn't offered to anyone else, and there is no sign-up.</p>
+    <p>It runs on Karl's own Mac mini. With his permission it reads his Gmail to surface what needs his attention: replies he owes, actions, bills, school updates and dates to add to his calendar. It shows these on his phone and in his private notes.</p>
+  </div>
+
+  <h2>Email is only sent when Karl approves it</h2>
+  <ul>
+    <li>The assistant can prepare a Gmail draft for a reply Karl asked for.</li>
+    <li>Nothing is sent until Karl reviews the exact message on his own paired phone and taps <strong>Approve</strong>. There is then a 30-second window to undo it.</li>
+    <li>It never sends email on its own, and it never sends to anyone Karl hasn't seen on the approval screen.</li>
+  </ul>
+
+  <h2>Google access it uses</h2>
+  <ul>
+    <li><strong>Read Gmail</strong> (<code>gmail.readonly</code>): to read messages and find what needs Karl's attention, and to check whether a reply has already gone.</li>
+    <li><strong>Manage drafts and send</strong> (<code>gmail.compose</code>): to create a draft of a reply and to send it after Karl approves it.</li>
+  </ul>
+  <p>How this data is handled is in the <a href="privacy.html">privacy policy</a>.</p>
+
+  <footer>
+    <p><a href="privacy.html">Privacy policy</a> · Contact: <a href="https://github.com/KarlBurns7">github.com/KarlBurns7</a></p>
+  </footer>
+</main>
+</body>
+</html>
